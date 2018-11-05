@@ -1,0 +1,58 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  margin: auto;
+  padding: 5% 10%;
+}
+
+.timeline{
+  background-color: #cdc7cc;
+  height: 20px;
+  width: 100%;
+  display: flex;
+  padding: 1px 0 1px 0;
+  position : relative;
+  @media (max-width: 240px) {
+    width: 90%;
+  }
+}
+
+.step{
+  flex-direction: column-reverse;
+  margin: auto;
+  width: 10%;
+  height: 15px;
+  border-right-width: 2px;
+  border-right-color: black;
+  border-right-style: inset;
+}
+
+.step:nth-child(11){
+  border-right-style: none;
+}
+
+.mark{
+  height: 25px;
+  width: 15px;
+  position: absolute;
+  border-radius: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#home .mark{
+  background-color: #0eb6ba;
+  top: -15px;
+}
+
+#away .mark{
+  background-color: #d43b2f;
+  top: 11px;
+}
