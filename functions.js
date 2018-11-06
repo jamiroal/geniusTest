@@ -9,7 +9,7 @@ function addMark(perc,mTeaM){
   document.getElementById(`${mTeaM}`).appendChild(mark);
 }
 function addAction (timeInSeconds, team) {
-var perc = (100*timeInSeconds)/totalTime;
+  var perc = (100*timeInSeconds)/totalTime;
   if (team == "HOME") {
     addMark(perc,'home');
   }else if (team == "AWAY") {

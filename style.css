@@ -57,28 +57,28 @@ body{
   #away .mark{
     top: 11px;
   }
-  @media screen and (max-width:480px){
-    .mark{
-      height: 15px;
-      width: 7px;
-    }
-    #home .mark{
-      top: -7px;
-    }
-    #away .mark{
-      top: 11px;
-    }
-    @media screen and (max-width:240px){
-      .mark{
-        height: 10px;
-        width: 5px;
-      }
-      #home .mark{
-        top: -5px;
-      }
-      #away .mark{
-      top: 14px;
-      }
-    }
+}
+@media screen and (max-width:480px){
+  .mark{
+    height: 15px;
+    width: 7px;
+  }
+  #home .mark{
+    top: -7px;
+  }
+  #away .mark{
+    top: 11px;
+  }
+}
+@media screen and (max-width:240px){
+  .mark{
+    height: 10px;
+    width: 5px;
+  }
+  #home .mark{
+    top: -5px;
+  }
+  #away .mark{
+  top: 14px;
   }
 }
