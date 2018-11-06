@@ -5,12 +5,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body{
   margin: auto;
   padding: 5% 10%;
 }
-
 .timeline{
   background-color: #cdc7cc;
   height: 20px;
@@ -18,11 +16,7 @@ body{
   display: flex;
   padding: 1px 0 1px 0;
   position : relative;
-  @media (max-width: 240px) {
-    width: 90%;
-  }
 }
-
 .step{
   flex-direction: column-reverse;
   margin: auto;
@@ -32,11 +26,9 @@ body{
   border-right-color: black;
   border-right-style: inset;
 }
-
 .step:nth-child(11){
   border-right-style: none;
 }
-
 .mark{
   height: 25px;
   width: 15px;
@@ -46,13 +38,47 @@ body{
   left: 0;
   right: 0;
 }
-
 #home .mark{
   background-color: #0eb6ba;
   top: -15px;
 }
-
 #away .mark{
   background-color: #d43b2f;
   top: 11px;
+}
+@media screen and (max-width:768px){
+  .mark{
+    height: 22px;
+    width: 12px;
+  }
+  #home .mark{
+    top: -11px;
+  }
+  #away .mark{
+    top: 11px;
+  }
+  @media screen and (max-width:480px){
+    .mark{
+      height: 15px;
+      width: 7px;
+    }
+    #home .mark{
+      top: -7px;
+    }
+    #away .mark{
+      top: 11px;
+    }
+    @media screen and (max-width:240px){
+      .mark{
+        height: 10px;
+        width: 5px;
+      }
+      #home .mark{
+        top: -5px;
+      }
+      #away .mark{
+      top: 14px;
+      }
+    }
+  }
 }
